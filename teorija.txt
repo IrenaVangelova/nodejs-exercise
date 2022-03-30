@@ -1,0 +1,29 @@
+1. Што е HTTP?
+2. Што е клиент - сервер модел?
+3. Какви пораки се испраќаат преку HTTP помеѓу клиентот и серверот?
+4. Какви HTTP методи постојат и за што се користат?
+5. Што е Node.js, а што Express.js?
+6. Што е MVC архитектура и што што е обврската на нејзините составни делови?
+7. Што се рути?
+8. Што се модули и какви типови на модули има? Објаснете ја разликата меѓу нив.
+9. Што е веб сервис? Дадете пример за еден веб сервис.
+10. Објаснете што е и како функционира JWT автентикација?
+11. Што е MongoDB? Објаснете накратко за каков софтвер станува збор.
+
+1.	HTTP e osnovata na World Wide Web  I se koristi za vcituvanje veb-stranici koristejkji hypertext links. HTTP e protocol na aplikaciski sloj dizajniran za prenos na informaciite. Tipicen protok preku HTTP vklucuva klientska masina koja pravi baranje do serverot, koj potoa isprakja poraka za odgovor.
+2.	Klient-server model e distribuirana aplikaciska struktura koja ja deli zadacata ili obemot na rabotata pomegju davatelite na resus ili usluga – server, I barateli na uslugi – klienti. Vo arhitekturata klient-server, koga klientskiot kompjuter isprakja baranje za podatoci do serverot preku internet, serverot go prifakja baraniot proces I gi dostavuva baranite paketi so podatoci nazad do klientot. Klientite ne spodeluvaat nitu eden od nivnite resursi.
+3.	Klientot isprakja baranje(request) I serverot vrakja odgovor (response).
+4.	Postojat 5 vida: 
+    POST – request za zapisuvanje/menuvanje podatoci,
+    GET – get data, request za citanje podatoci,
+    PUT – request za celosna promena na postoecki zapis vo baza,
+    PATCH - request za delumna promena na postoecki zapis vo baza,
+    DELETE - request za brisenje podatoci vo baza
+5.	Node.js e virtuelna masina koja korisit JavaScript kako jazik za skriptiranje. Se zasnova na arhitekntura upravuvana od nastani kade sto I/O raboti asinhrono. 
+Express.js e framework za Node.js I obezveduva razlicni funkcii koi go pravat razvojot na web-aplikacii brz I lesen sto inaku odzema povekje vreme koristejkji samo Node.js.
+6.	Mvc e softverski dizajn pattern koj se koristi za implementiranje korisnicki interfejsi, podatocna I kontrolna logidka, go naglasuva odvojuvanjeto od biznis logikata, I ona so se prikazuva. Se sostoi od 3  logicki komponenti: model, view I controller.
+7.	Rutiranje go definira nacinot na koj se postapuvaat baranjata na klientot od krajnite tocki na aplikacijata. Postojat dva nacina za sproveduvanje na rutiranje: so framework I bez framework.
+8.	Vo JS modul e datoteka koja sodrzi kod koj e povrzan so nekoja funkcionalnost od aplikacijata.
+9.	Web servis e aplikaciska komponenta koja sluzi za komunikacija I razmena na informacii so drugi aplikacii preku internet  mreza. Primer za tip na veb servis e REST servis koj komunicira vrz baza na klient-server koristekji HTTP protocol. Realen primer e Amazon koj gi nudi cenite na prozivodite koi se prodavaat na amazon.com
+10.	JWT e standard koj definira kompakten I samostoen nacin za bezbedno prenesuvanje informacii megju stranite kako JSON object.Kompaktnata golemina go olesnuva prenosot na tokenite preku URL, POST parameter ili vnatre vo HTTP header-ot. Informaciite vo JWT se ditialno potpisani so pomos na taen ili javen/privaten kluc.
+11.	MongoDb e source-available cross-platform document-oriented database program. Klasicifirana kako NoSQL database program, MongoDB koristi dokumenti slicni na JSON so opcionalni semi. 
