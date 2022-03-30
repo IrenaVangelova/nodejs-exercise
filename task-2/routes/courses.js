@@ -11,11 +11,28 @@ router.use(jwt({
       algorithms: ['HS256'] 
 }).unless({
       path: [
-            {
-                  url: '/courses', methods: ['GET']
-            }
-      ]
-}));
+        {
+          url: /^\/courses\/.*/,
+          methods: ['PATCH'],
+        },
+        {
+          url: '/courses',
+          methods: ['GET'],
+        },
+        {
+          url: '/courses',
+          methods: ['POST'],
+        },
+        {
+          url: /^\/courses\/.*/,
+          methods: ['DELETE'],
+        },
+        {
+          url: /^\/courses\/.*/,
+          methods: ['GET'],
+        },
+      ],
+    }));
 
 router.use((err, req, res, next) => {
       console.log(err.name);

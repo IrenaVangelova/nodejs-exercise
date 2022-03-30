@@ -5,7 +5,7 @@ const Course = require('../models/course');
 
 const all = async (req, res) => {
 
-  const acedemies = await Academy.find().populate('courses', 'name');
+  const acedemies = await Academy.find().populate('courses');
 
   res.send({
     error: false,
@@ -16,13 +16,7 @@ const all = async (req, res) => {
 
 const create = async (req, res) => {
 
-    const academy = await Academy.create({
-        ...req.body
-      });
-    
-      await Course.findByIdAndUpdate(req.params.id, {
-        $push: { academies: academy._id },
-      });
+  const academy = await Academy.create(req.body);
     
       res.send({
         error: false,
@@ -33,7 +27,7 @@ const create = async (req, res) => {
 
 const byId = async (req, res) => {
 
-  const acedemies = await Academy.findById(req.params.id);
+  const acedemies = await Academy.findById(req.params.id).populate('courses');
 
   res.send({
     error: false,
