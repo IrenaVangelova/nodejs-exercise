@@ -38,13 +38,13 @@
 
     <p>Name: <%= university.name %>
     </p>
-    <p>City: <%= university.adress %>
+    <p>City: <%= university.address %>
     </p>
     <p>Faculties:</p>
     <ul>
       <% university.faculties.forEach(faculty=> { %>
         <li>
-          <%= `${facultyname} ${faculty.adress})` %>
+          <%= `${facultyname} ${faculty.address})` %>
         </li>
         <% }) %>
     </ul>

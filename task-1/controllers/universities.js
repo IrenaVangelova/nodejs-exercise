@@ -25,7 +25,7 @@ const getUpdate = async (req, res) => {
 };
 
 const getView = async (req, res) => {
-  const university = await University.findById(req.params.id).populate('university');
+  const university = await University.findById(req.params.id).populate('faculty');
 
   res.render(`universities/view`, { university });
 };

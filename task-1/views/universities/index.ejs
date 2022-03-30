@@ -31,14 +31,14 @@
     </div>
   </nav>
 
-  <a class="btn btn-primary" href="/universities/create">Create new faculty</a>
+  <a class="btn btn-primary" href="/universities/create">Create new university</a>
 
   <table class="table mt-5 bg-dark">
     <thead class="bg-primary">
       <tr>
         <th scope="col">#ID</th>
         <th scope="col">Name</th>
-        <th scope="col">Adress</th>
+        <th scope="col">Address</th>
         <th scope="col">Actions</th>
       </tr>
     </thead>
@@ -54,7 +54,7 @@
             <%= university.name %>
           </td>
           <td>
-            <%= university.adress%>
+            <%= university.address %>
           </td>
           <td>
             <a class="btn btn-raised btn-secondary" href="/universities/<%= university._id %>">Edit</a>
